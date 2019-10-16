@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>testtransition</title>
+        <script src="script.js"></script>
+        <script src="jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133492093-4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'UA-133492093-4');
+        </script>
+    </head>
+    <body class="slidePage" onload="hideForwardArrow();">
+        <script>document.body.classList.add('fade');</script>
+        <main>
+            <h1>Test page!</h1>
+        </main>
+        <footer>
+            <button class="backArrow footerButton" id="backArrow" onclick="testRevert();"><i class="material-icons backArrowIcon">arrow_back_ios</i></button>
+            <button class="forwardArrow footerButton" id="forwardArrow" onclick="testChange();"><i class="material-icons forwardArrowIcon">arrow_forward_ios</i></button>
+        </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(e) {
+                document.body.classList.remove('fade');
+            });
+        </script>
+    </body>
+</html>
