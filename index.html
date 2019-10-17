@@ -24,13 +24,16 @@
         <main>
             <h1>Old Norfolk & Norwich Hospital</h1>
             <p>Welcome to this online museum on the history of the old Norfolk and Norwich hospital! Press the arrow below or use the arrow keys to start.</p>
-            <img src="assets/images/photos/reuseallowed/003.jpg" class="displayImage">
-            <small class="attribution page1attribution"><a href="https://www.facebook.com/photo.php?fbid=10158035681836521&set=pcb.10155726228897553&type=3&theater" class="attributionLink" target="_blank">Credit: Jeremy Richard Webb, Secret Norwich</a></small>
-            <small class="imageCaption page1ImageCaption">Looking down Newmarket Road from The Unthank Arms towards the 2 tower blocks</small>
+            <div class="displayHolder">
+                <img src="assets/images/photos/reuseallowed/003.jpg" class="displayContent">
+                <small class="attribution page1attribution"><a href="https://www.facebook.com/photo.php?fbid=10158035681836521&set=pcb.10155726228897553&type=3&theater" class="attributionLink" target="_blank">Credit: Jeremy Richard Webb, Secret Norwich</a></small>
+                <small class="imageCaption page1ImageCaption">Looking down Newmarket Road from The Unthank Arms towards the 2 tower blocks</small>
+            </div>
         </main>
         <footer>
             <button class="backArrow footerButton" id="backArrow"><i class="material-icons backArrowIcon">arrow_back_ios</i></button>
             <button class="forwardArrow footerButton" id="forwardArrow" onclick="testChange()"><i class="material-icons forwardArrowIcon">arrow_forward_ios</i></button>
+            <progress class="bottomProgress" max="5" value="3"></progress>
         </footer>
         <script>
             document.addEventListener("DOMContentLoaded", function(e) {

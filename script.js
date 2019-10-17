@@ -38,4 +38,8 @@ $(function(){
             }  
         }
     });
+
+    setTimeout(function() {
+        $(".bottomProgress").addClass("after");
+    }, 500);
 });

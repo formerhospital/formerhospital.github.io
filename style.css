@@ -10,6 +10,10 @@ body {
     height: 100%;
 }
 
+main {
+    margin-bottom: 100px;
+}
+
 .slidePage {
     background-color: #100057;
     color: white;
@@ -34,13 +38,13 @@ footer {
 }
 
 .backArrow {
-    position: absolute;
+    position: fixed;
     left: 30px;
     bottom: 30px;
 }
 
 .forwardArrow {
-    position: absolute;
+    position: fixed;
     right: 30px;
     bottom: 30px;
 }
@@ -60,6 +64,12 @@ i {
     position: absolute;
     right: 22px;
     bottom: 23px;
+}
+
+.displayHolder {
+    margin-left: 15%;
+    margin-right: 15%;
+    position: relative;
 }
 
 @keyframes fadeIn {
@@ -86,16 +96,18 @@ i {
     opacity: 0;
 }
 
-.displayImage {
+.displayContent {
     border: 5px solid gray;
     border-radius: 15px;
-    height: 70%;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    max-height: calc(100vh - 300px);
 }
 
-.page1attribution {
+.attribution {
     position: absolute;
-    bottom: 16%;
-    left: 25%;
+    left: 0;
 }
 
 .attributionLink {
@@ -103,9 +115,57 @@ i {
     text-decoration: none;
 }
 
-.page1ImageCaption {
+.imageCaption {
     position: absolute;
-    bottom: 16%;
-    right: 25%;
+    right: 0;
     font-weight: bold;
+}
+
+.bottomProgress {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: 3s filter;
+    filter: hue-rotate(360deg);
+}
+
+.bottomProgress.after {
+    filter: hue-rotate(0deg);
+}
+
+.bottomProgress::-webkit-progress-bar {
+    background: transparent;
+}
+
+.bottomProgress::-webkit-progress-value {
+    background: #c2d400;
+}
+
+.bottomProgress::-moz-progress-bar {
+    background: #c2d400;
+}
+
+@media (max-width: 1200px) {
+    .attribution {
+        position: unset;
+        display: block;
+    }
+
+    .imageCaption {
+        position: unset;
+        display: block;
+    }
+}
+
+@media (max-width: 1000px) {
+    .displayContent {
+        height: 50vw;
+    }
 }
