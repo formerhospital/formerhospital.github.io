@@ -79,3 +79,33 @@ i {
       opacity: 0;
     }
 }
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+.displayImage {
+    border: 5px solid gray;
+    border-radius: 15px;
+    height: 70%;
+}
+
+.page1attribution {
+    position: absolute;
+    bottom: 16%;
+    left: 25%;
+}
+
+.attributionLink {
+    color: white;
+    text-decoration: none;
+}
+
+.page1ImageCaption {
+    position: absolute;
+    bottom: 16%;
+    right: 25%;
+    font-weight: bold;
+}

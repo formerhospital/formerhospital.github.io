@@ -2,9 +2,11 @@
 <html>
     <head>
         <title>Old Norfolk & Norwich Hospital</title>
+        <meta name="theme-color" content="#100057">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="script.js"></script>
-        <script src="jquery-3.4.1.min.js"></script>
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
         <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,10 +23,14 @@
         <script>document.body.classList.add('fade');</script>
         <main>
             <h1>Old Norfolk & Norwich Hospital</h1>
+            <p>Welcome to this online museum on the history of the old Norfolk and Norwich hospital! Press the arrow below or use the arrow keys to start.</p>
+            <img src="assets/images/photos/reuseallowed/003.jpg" class="displayImage">
+            <small class="attribution page1attribution"><a href="https://www.facebook.com/photo.php?fbid=10158035681836521&set=pcb.10155726228897553&type=3&theater" class="attributionLink" target="_blank">Credit: Jeremy Richard Webb, Secret Norwich</a></small>
+            <small class="imageCaption page1ImageCaption">Looking down Newmarket Road from The Unthank Arms towards the 2 tower blocks</small>
         </main>
         <footer>
             <button class="backArrow footerButton" id="backArrow"><i class="material-icons backArrowIcon">arrow_back_ios</i></button>
-            <button class="forwardArrow footerButton" id="forwardArrow" onclick="testChange();"><i class="material-icons forwardArrowIcon">arrow_forward_ios</i></button>
+            <button class="forwardArrow footerButton" id="forwardArrow" onclick="testChange()"><i class="material-icons forwardArrowIcon">arrow_forward_ios</i></button>
         </footer>
         <script>
             document.addEventListener("DOMContentLoaded", function(e) {

@@ -19,9 +19,23 @@ function showForwardArrow() {
 }
 
 function testChange() {
-    window.location.href = "testtransition.html"
+    window.location.href = "testtransition.html";
 }
 
-function testRevert() {
-    window.location.href = "index.html"
+function home() {
+    window.location.href = "index.html";
 }
+
+$(function(){
+    $('html').keydown(function(e){
+        if (e.keyCode == 39) {
+            if (window.location.pathname.split("/").pop() == "index.html") {
+                window.location.href = "testtransition.html";
+            }
+        } else if (e.keyCode == 37) {
+            if (window.location.pathname.split("/").pop() == "testtransition.html") {
+                window.location.href = "index.html";
+            }  
+        }
+    });
+});
