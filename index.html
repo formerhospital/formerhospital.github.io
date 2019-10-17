@@ -19,7 +19,7 @@
             gtag('config', 'UA-133492093-4');
         </script>
     </head>
-    <body class="slidePage" onload="hideBackArrow();">
+    <body class="slidePage" onload="hideBackArrow(); consoleAlert();">
         <script>document.body.classList.add('fade');</script>
         <main>
             <h1>Old Norfolk & Norwich Hospital</h1>
@@ -32,8 +32,8 @@
         </main>
         <footer>
             <button class="backArrow footerButton" id="backArrow"><i class="material-icons backArrowIcon">arrow_back_ios</i></button>
-            <button class="forwardArrow footerButton" id="forwardArrow" onclick="testChange()"><i class="material-icons forwardArrowIcon">arrow_forward_ios</i></button>
-            <progress class="bottomProgress" max="5" value="3"></progress>
+            <button class="forwardArrow footerButton" id="forwardArrow" onclick="page2();"><i class="material-icons forwardArrowIcon">arrow_forward_ios</i></button>
+            <progress class="bottomProgress" max="5" value="1"></progress>
         </footer>
         <script>
             document.addEventListener("DOMContentLoaded", function(e) {
