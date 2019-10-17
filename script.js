@@ -1,7 +1,3 @@
-document.addEventListener('contextmenu', event => event.preventDefault());
-
-document.getElementById('my-image').ondragstart = function() { return false; };
-
 function hideBackArrow() {
     var backArrow = document.getElementById("backArrow");
     backArrow.style.display = "none";
@@ -43,7 +39,9 @@ $(function(){
         }
     });
 
-    setTimeout(function() {
-        $(".bottomProgress").addClass("after");
+setTimeout(function() {
+    $(".bottomProgress").addClass("after");
     }, 500);
 });
+
+document.addEventListener('contextmenu', event => event.preventDefault());

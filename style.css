@@ -8,7 +8,6 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
 
 main {
@@ -30,6 +29,7 @@ footer {
 
 img {
     pointer-events: none;
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
 
 .footerButton {
