@@ -28,8 +28,7 @@ self.addEventListener('install', e => {
         `/assets/images/slider/Whole Area/WholeArea2003.jpg`,
         `/assets/images/slider/Whole Area/WholeArea2006.jpg`,
         `/assets/images/slider/Whole Area/WholeArea2018.jpg`,
-        `/assets/logo/Logo.png`,
-        `/media/motd/motdList.js`
+        `/assets/logo/Logo.png`
       ])
           .then(() => self.skipWaiting());
     })
